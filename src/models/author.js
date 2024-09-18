@@ -2,13 +2,13 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Author = sequelize.define('Author', {
-    name: {
+    name:{
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     },
     birthYear: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
     }
-})
+});
 
 module.exports = Author;

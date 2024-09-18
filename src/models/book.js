@@ -4,15 +4,15 @@ const sequelize = require('../config/database');
 const Book = sequelize.define('Book', {
     title: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     },
     isbn: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
     },
     publishedYear: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
     }
-})
+});
 
 module.exports = Book;
